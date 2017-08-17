@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 var LoginView = require('./LoginView');
-
+var LoginViewController = require('./LoginViewController.ios');
 
 // export default class LoginDemo extends Component {
 //   render() {
@@ -36,6 +36,8 @@ var LoginDemo = React.createClass({
                 }}
                 style={{flex: 1}}
             />
+
+            //<Text>欢迎页面 </Text>
 
 
         );
