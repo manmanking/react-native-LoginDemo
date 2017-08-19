@@ -13,6 +13,9 @@ import {
     TextInput
 } from 'react-native';
 
+
+var MainHomeViewController = require('./../MainHome/MainHomeViewController');
+
 var Dimensions = require('Dimensions');
 //获取屏幕宽度
 var screenWidth = Dimensions.get('window').width;
@@ -102,7 +105,16 @@ var LoginViewController = React.createClass({
      * 登录按钮被点击
      */
     loginBtnOnClick(){
-        AlertIOS.alert("登录");
+        //AlertIOS.alert("登录");
+        this.props.navigator.push({
+            component:MainHomeViewController,
+            title:'主页'
+
+
+        });
+
+
+
     }
 });
 

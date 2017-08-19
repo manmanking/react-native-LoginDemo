@@ -15,7 +15,7 @@ import {
 var Dimensions = require('Dimensions');
 var screenWidth = Dimensions.get('window').width;
 
-var LoginViewController = require('./LoginViewController.ios')
+var LoginViewController = require('./LoginViewController')
 
 
 var LoginView = React.createClass({
@@ -29,7 +29,7 @@ var LoginView = React.createClass({
                 {/*<View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />*/}
                 {/*<View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />*/}
                 <View style={styles.topViewContainer}>
-                    <Image source={require('./Sources/Image/tiger.png')}
+                    <Image source={require('../../Image/tiger.png')}
                            style={styles.topImageStyle}/>
                 </View>
                 {/** 用于与登录相关的按钮 */}
@@ -51,11 +51,11 @@ var LoginView = React.createClass({
                             <View style={styles.splitLine}></View>
                         </View>
                         <View style={styles.loginThirdButtonContainer}>
-                            <Image source={require('./Sources/Image/ic_qq_login_normal.png')}
+                            <Image source={require('../../Image/ic_qq_login_normal.png')}
                                    style={styles.loginThirdButtonStyle}/>
-                            <Image source={require('./Sources/Image/ic_weixin_login_normal.png') }
+                            <Image source={require('../../Image/ic_weixin_login_normal.png') }
                                     style={styles.loginThirdButtonStyle} />
-                            <Image source={require('./Sources/Image/ic_weibo_login_normal.png')}
+                            <Image source={require('../../Image/ic_weibo_login_normal.png')}
                                     style={styles.loginThirdButtonStyle} />
 
 

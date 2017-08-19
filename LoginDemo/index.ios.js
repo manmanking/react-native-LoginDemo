@@ -13,8 +13,8 @@ import {
     NavigatorIOS
 } from 'react-native';
 
-var LoginView = require('./LoginView');
-var LoginViewController = require('./LoginViewController.ios');
+var LoginView = require('./Sources/Sences/Login/LoginView');
+var LoginViewController = require('./Sources/Sences/Login/LoginViewController');
 
 // export default class LoginDemo extends Component {
 //   render() {
